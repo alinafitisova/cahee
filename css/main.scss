@@ -3,29 +3,29 @@
 /*font-family: 'Pacifico', cursive;
 font-family: 'Raleway', sans-serif;*/
 
-$font-color_white: #fff;
-$font-color_black: #262626;
-$main-font: 'Raleway', sans-serif;
+$fontColorWhite: #fff;
+$fontColorBlack: #262626;
+$mainFont: 'Raleway', sans-serif;
 
-@mixin title($fz, $font-color, $text-center) {
+@mixin title($fz, $fontColor, $textCenter) {
   font-size: $fz;
-  color: $font-color;
-  text-align: $text-center;
+  color: $fontColor;
+  text-align: $textCenter;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
 }
-@mixin text($font-color, $tx-align, $lh) {
-  color: $font-color;
-  text-align: $tx-align;
+@mixin text($fontColor, $txAlign, $lh) {
+  color: $fontColor;
+  text-align: $txAlign;
   line-height: $lh;
-  font-family: $main-font;
+  font-family: $mainFont;
   font-weight: 300;
   font-size: 17px;
 }
-@mixin btn($bg-c){
-  background: $bg-c;
-  font-family: $main-font;
-  color: $font-color_white;
+@mixin btn($bgCol){
+  background: $bgCol;
+  font-family: $mainFont;
+  color: $fontColorWhite;
   font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;
@@ -50,16 +50,17 @@ $main-font: 'Raleway', sans-serif;
 }
 /* -----------gallery__header----------*/
 .header-gallery__heading {
-  @include title(90px, $font-color_black, center);
+  @include title(90px, $fontColorBlack, center);
   padding: 80px 0 0px 0;
   }
 
 .header-gallery__text {
-  @include text(#262626 , center, 27px);
+  @include text($fontColorBlack, center, 27px);
    max-width: 580px;
    margin: 0 auto 45px;
    margin: 20px auto 29px;
 }
+
 /* -----------gallery__main----------*/
 .main-gallery {
   display: flex;
